@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section-heading {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+.btn {
+  padding: 25px;
+  font-size: 16px;
+  background-color: #cc9933;
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+}
+.header {
+}
+
+.header-top {
+  height: 114px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 30px;
+}
+.logo-img {
+}
+.header-link {
+}
+.header-personal-area {
+  margin-left: auto;
+}
+.header-bottom {
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+.header-nav-item {
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+.header-nav-link {
+}
+.section-two {
+  padding-top: 70px;
+}
+.section-two-container {
+  display: flex;
+  align-items: stretch;
+}
+.section-quick-booking {
+  flex: 1 1 50%;
+  margin-right: 50px;
+  max-height: 540px;
+}
+
+.section-quick-booking-form {
+}
+.section-quick-booking-input {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.section-quick-booking-btn {
+}
+.section-quick-booking-btn-description {
+  margin-left: 25px;
+}
+.gold {
+}
+.section-special-offer {
+  flex: 1 1 50%;
+}
+.section-special-offer-card {
+  padding: 258px 220px 35px 35px;
+}
+.section-special-offer-heading {
+  max-width: 320px;
+  width: 100%;
+}
+.section-special-offer-info {
+  display: flex;
+  align-items: center;
+}
+.section-special-offer-price {
+  margin-right: 35px;
+}
+.section-special-offer-more {
+}
+.section-abiut-us {
+  padding-top: 65px;
+}
+.contaoner {
+}
+.section-abiut-us-description {
+  padding-left: 40px;
+  max-width: 895px;
+}
+.section-services {
+  padding-top: 65px;
+}
+.section-services-list {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.section-services-item {
+  flex: 1 1 calc(50% - 23px);
+}
+.section-services-heading {
+  margin-top: 35px;
+  margin-left: 45px;
+  margin-right: 120px;
+  margin-bottom: 20px;
+}
+.section-services-description {
+  margin-left: 45px;
+  margin-right: 120px;
+  margin-bottom: 45px;
+}
+.section-advantages {
+  padding-top: 65px;
+}
+.section-advantages-list {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.section-advantages-item {
+  flex: 1 1 calc(25% - 23px);
+  padding: 40px 45px;
+}
+.section-advantages-icon {
+  width: 63px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.section-advantages-description {
+}
+.section-accommodation {
+  padding-top: 65px;
+}
+.section-accommodation-list {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.section-accommodation-item {
+  flex: 1 1 calc(33.33% - 23px);
+}
+.section-accommodation-img {
+}
+.section-accommodation-info {
+}
+.section-accommodation-price {
+}
+.grey {
+}
+.section-accommodation-stars {
+}
+.section-accommodation-star {
+}
+.section-accommodation-description {
+}
+.section-accommodation-place {
+}
+.section-accommodation-btn {
+}
+.section-accommodation-more {
+}
