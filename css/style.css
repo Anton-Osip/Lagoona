@@ -1,8 +1,44 @@
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: local('MullerLight'), local('Muller-Light'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MullerRegular'), local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: local('MullerMedium'), local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: local('MullerBold'), local('Muller-Bold'), url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: sans-serif;
+  font-family: 'Muller';
+}
+body {
+  background-color: #f1f1f1;
 }
 a {
   text-decoration: none;
@@ -21,8 +57,13 @@ img {
   padding: 0 15px;
 }
 .section-heading {
+  margin-top: 0;
   margin-bottom: 20px;
   padding-left: 40px;
+  color: #333333;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
 }
 .btn {
   padding: 25px;
@@ -46,9 +87,17 @@ img {
 .logo-img {
 }
 .header-link {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 600;
+  color: #666666;
 }
 .header-personal-area {
   margin-left: auto;
+  color: #cc9933;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
 }
 .header-bottom {
   padding: 0 20px;
@@ -56,6 +105,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
 }
 .header-nav {
 }
@@ -64,12 +115,27 @@ img {
   align-items: center;
 }
 .header-nav-item {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 45px;
 }
 .header-nav-link {
+  color: #333333;
 }
+.header-input {
+  color: #bebebe;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  border: 0px;
+  padding: 17px 20px;
+}
+
 .section-two {
   padding-top: 70px;
 }
@@ -88,24 +154,51 @@ img {
 .section-quick-booking-input {
   display: block;
   margin-bottom: 25px;
+  color: #bebebe;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 0px;
+  padding: 25px;
+  width: 100%;
 }
 
 .section-quick-booking-btn {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
 }
 .section-quick-booking-btn-description {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
   margin-left: 25px;
 }
 .gold {
+  color: #cc9933;
 }
 .section-special-offer {
   flex: 1 1 50%;
 }
 .section-special-offer-card {
-  padding: 258px 220px 35px 35px;
+  max-height: 540px;
+  padding: 178px 120px 35px 35px;
+  background: url('../img/spec.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 12px;
 }
 .section-special-offer-heading {
   max-width: 320px;
   width: 100%;
+  color: #fff;
+  font-size: 66px;
+  line-height: 1;
+  font-weight: 700;
 }
 .section-special-offer-info {
   display: flex;
@@ -113,18 +206,28 @@ img {
 }
 .section-special-offer-price {
   margin-right: 35px;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 60px;
 }
 .section-special-offer-more {
+  font-style: 16px;
+  line-height: 1;
+  color: #ffcc66;
 }
 .section-abiut-us {
   padding-top: 65px;
 }
-.contaoner {
-}
 .section-abiut-us-description {
   padding-left: 40px;
-  max-width: 895px;
+  max-width: 846px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
 }
+
 .section-services {
   padding-top: 65px;
 }
@@ -138,17 +241,27 @@ img {
 }
 .section-services-item {
   flex: 1 1 calc(50% - 23px);
+  border-radius: 12px;
+  background-color: #fff;
 }
 .section-services-heading {
   margin-top: 35px;
   margin-left: 45px;
   margin-right: 120px;
   margin-bottom: 20px;
+  font-style: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #cc9933;
 }
 .section-services-description {
   margin-left: 45px;
   margin-right: 120px;
   margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
 }
 .section-advantages {
   padding-top: 65px;
@@ -164,6 +277,8 @@ img {
 .section-advantages-item {
   flex: 1 1 calc(25% - 23px);
   padding: 40px 45px;
+  background-color: #fff;
+  border-radius: 12px;
 }
 .section-advantages-icon {
   width: 63px;
@@ -172,6 +287,10 @@ img {
 }
 
 .section-advantages-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
 }
 .section-accommodation {
   padding-top: 65px;
@@ -186,24 +305,61 @@ img {
 }
 .section-accommodation-item {
   flex: 1 1 calc(33.33% - 23px);
+  border-radius: 12px;
+  background-color: #fff;
+  padding-bottom: 46px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+  font-weight: 400;
 }
 .section-accommodation-img {
 }
 .section-accommodation-info {
+  margin-top: 35px;
+  padding: 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .section-accommodation-price {
 }
 .grey {
+  color: #666666;
 }
 .section-accommodation-stars {
 }
 .section-accommodation-star {
 }
 .section-accommodation-description {
+  padding: 0 42px;
 }
 .section-accommodation-place {
+  padding: 0 42px;
 }
 .section-accommodation-btn {
+  margin: 25px 42px 0px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #cc9933;
+  background-color: #fff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid #cc9933;
+}
+.section-accommodation-item-more {
+  background: url('../img/Accommodation-9.jpg') no-repeat #fff;
+  background-size: cover;
+  height: 477px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 40px;
 }
 .section-accommodation-more {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
 }
