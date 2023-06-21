@@ -40,7 +40,7 @@
               </li>
             </ul>
           </nav>
-          <input type="text" placeholder="Поиск" class="header-input"/>
+          <input type="text" placeholder="Поиск" class="header-input" />
         </div>
       </div>
     </header>
@@ -49,25 +49,43 @@
         <div class="container section-two-container">
           <div class="section-quick-booking">
             <h2 class="section-heading">Быстрая бронь</h2>
-            <form class="section-quick-booking-form">
-              <input type="text" class="section-quick-booking-input" placeholder="Город" />
+            <form
+              action="https://jsonplaceholder.typicode.com/posts"
+              autocomplete
+              method="POST"
+              class="section-quick-booking-form"
+            >
+              <input
+                name="city"
+                type="text"
+                class="section-quick-booking-input"
+                placeholder="Город"
+              />
               <input
                 type="text"
+                name="catigory"
                 class="section-quick-booking-input"
                 placeholder="Категория номера"
               />
-              <input type="text" class="section-quick-booking-input" placeholder="Дата заселения" />
               <input
                 type="text"
+                name="data"
+                class="section-quick-booking-input"
+                placeholder="Дата заселения"
+              />
+              <input
+                type="text"
+                name="night"
                 class="section-quick-booking-input"
                 placeholder="Количество ночей"
               />
               <input
                 type="text"
+                name="users"
                 class="section-quick-booking-input"
                 placeholder="Количество гостей"
               />
-              <button class="btn section-quick-booking-btn">Найти номер</button>
+              <button type="submit" class="btn section-quick-booking-btn">Найти номер</button>
               <span class="section-quick-booking-btn-description"
                 ><span class="gold">9 756</span> предложений доступно</span
               >
@@ -924,6 +942,274 @@
           </ul>
         </div>
       </section>
+      <section class="section-two">
+        <div class="container section-two-container">
+          <div class="section_contacts">
+            <h2 class="section-heading">Контакты</h2>
+            <div class="contacts">
+              <ul class="section_contacts-list">
+                <li class="section_contacts-item">
+                  <div class="section_contacts-topic">Адрес</div>
+                  <div class="section_contacts-info">
+                    Москва, улица Юности,<br />
+                    дом 5 строение 4, офис 2
+                  </div>
+                </li>
+                <li class="section_contacts-item">
+                  <div class="section_contacts-topic">Телефоны</div>
+                  <div class="section_contacts-info">
+                    <a href="tel:+74995356434" class="section_contacts-tel">+7 (499) 535-64-34</a>
+                    <a href="tel:+74950050544" class="section_contacts-tel">+7 (495) 005-05-44</a>
+                  </div>
+                </li>
+                <li class="section_contacts-item">
+                  <div class="section_contacts-topic">E-mail</div>
+                  <div class="section_contacts-info">
+                    <a href="mailto:lg.oona@mail.ru" class="section_contacts-mail"
+                      >lg.oona@mail.ru</a
+                    ><span class="section_contacts-mail-text">&nbsp;по вопросам бронирования</span
+                    ><br />
+                    <a href="mailto:hotels.ln@mail.ru" class="section_contacts-mail"
+                      >hotels.ln@mail.ru</a
+                    ><span class="section_contacts-mail-text"
+                      >&nbsp;по вопросам сотрудничества</span
+                    >
+                  </div>
+                </li>
+                <li class="section_contacts-item">
+                  <div class="section_contacts-topic">График</div>
+                  <div class="section_contacts-info">
+                    Понедельник - пятница,<br />
+                    с 10:0 до 19:00
+                  </div>
+                </li>
+              </ul>
+              <button class="btn btn-section_contacts">Построить маршрут</button>
+            </div>
+          </div>
+          <div class="section-form">
+            <h2 class="section-heading">Напишите нам</h2>
+            <form
+              action="https://jsonplaceholder.typicode.com/posts"
+              autocomplete
+              method="POST"
+              class="form"
+            >
+              <input type="text" name="name" placeholder="Name" id="name" class="input" />
+              <input type="tel" name="phone" placeholder="Phone" id="phone" class="input" />
+              <textarea
+                type="text"
+                name="message"
+                placeholder="Сообщение..."
+                id="message"
+                class="message"
+              ></textarea>
+              <button type="submit" class="btn btn-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-info">
+          <span class="footer-info-text">
+            © 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+          </span>
+          <span class="footer-info-text">
+            Представленная на сайте информация носит справочный характер и не является публичной
+            офертой
+          </span>
+          <a href="#" class="footer-info-text footer-info-text-gold">
+            Политика конфиденциальности</a
+          >
+        </div>
+        <div class="footer-contacts">
+          <span class="footer-info-text"> 11710, улица Юности, дом 5 строение 4, офис 2 </span>
+          <div class="footer-contacts-tels">
+            <a href="tel:+74995356434" class="footer-contacts-tel footer-info-text-gold"
+              >+7 (499) 535-64-34</a
+            >
+            <a href="tel:+74950050544" class="footer-contacts-tel footer-info-text-gold"
+              >+7 (495) 005-05-44</a
+            >
+          </div>
+          <div class="footer-contacts-mails">
+            <a href="mailto:lg.oona@mail.ru" class="footer-contacts-mail footer-info-text-gold"
+              >lg.oona@mail.ru</a
+            >
+            <a href="mailto:hotels.ln@mail.ru" class="footer-contacts-mail footer-info-text-gold"
+              >hotels.ln@mail.ru</a
+            >
+          </div>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 98 98"
+                  width="100%"
+                  height="100%"
+                >
+                  <title>tripadvisor-svg</title>
+                  <style>
+                    .si {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <g>
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m73 52.1c0 3.2-2.6 5.9-5.9 5.9-3.2 0-5.9-2.7-5.9-6 0-3.3 2.7-5.9 6-5.9 3.3 0 5.9 2.6 5.8 6zm-2.8-0.1c0-1.6-1.3-3-3-3-1.7 0-3 1.3-3 3 0 1.7 1.3 3 3 3 1.6 0 3-1.3 3-3z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m45.2 52.2c0 8-6.5 14.5-14.5 14.6-8.2 0.1-14.7-6.6-14.8-14.4-0.2-8.4 6.7-15 14.6-14.9 8.2 0 14.7 6.6 14.7 14.7zm-5.9-0.2c0-5.1-4.1-9.1-9.1-9.1-4.8-0.1-9.1 3.9-9.1 9.1 0 5.1 4.3 9.3 9.6 9.1 4.7-0.2 8.7-4 8.6-9.1z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m97.8 48.9c0 27-21.9 48.9-48.9 48.9-27 0-48.9-21.9-48.9-48.9 0-27 21.9-48.9 48.9-48.9 27 0 48.9 21.9 48.9 48.9zm-12.5 7.9c1.3-5.5 0.3-10.6-2.9-15.2-0.2-0.3-0.2-0.5-0.1-0.7 0.6-2.2 1.7-4.1 2.9-6 0.2-0.3 0.3-0.5 0.5-0.8 0 0 0 0 0-0.1q-0.4 0-0.9 0-5.4 0-10.8 0c-0.3 0-0.6-0.1-0.8-0.2-3.1-1.9-6.3-3.4-9.8-4.5-2-0.6-4-1.1-6.1-1.4-2.8-0.4-7-0.9-12.2-0.5-2.2 0.1-4.3 0.4-6.4 0.8-2.2 0.4-4.3 1-6.4 1.7-2.9 1-5.7 2.3-8.3 4-0.2 0.1-0.3 0.2-0.5 0.2q-5.5 0-11.1 0c-0.1 0-0.1 0-0.2 0v0.1c0.3 0.5 0.6 0.9 0.9 1.3 1.1 1.8 2.1 3.6 2.6 5.6 0 0.1 0 0.4-0.1 0.5-1.4 1.9-2.3 3.9-2.9 6.2-0.2 0.8-0.9 4-0.3 7.3 0.6 3.6 2 6.7 4.4 9.4 2.5 2.8 5.5 4.6 9 5.6 2.5 0.7 5 0.8 7.6 0.4 4.6-0.8 8.4-2.9 11.4-6.5l0.1-0.1c0 0 0-0.1 0.1-0.1 1.3 1.9 2.6 3.8 3.9 5.8 1.3-2 2.6-3.9 3.9-5.9 0.4 0.4 0.7 0.8 1 1.1 2.5 2.6 5.5 4.4 9 5.3 1.4 0.4 2.9 0.6 4.4 0.6 3.5 0 6.8-0.9 9.8-2.8 4.2-2.7 6.9-6.4 8.3-11.1z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m36.2 51.9c0 3.3-2.7 6-5.9 6-3.3 0-6-2.6-6-5.9 0-3.2 2.7-5.9 5.9-5.9 3.4 0 6 2.6 6 5.8zm-2.9 0.1c-0.1-1.7-1.4-3-3.1-3-1.7 0-3 1.3-3 3 0 1.8 1.4 3.1 3.1 3.1 1.7-0.1 3.1-1.4 3-3.1z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m81.9 52.2c0 8.2-6.6 14.7-14.7 14.7-8.1 0.1-14.7-6.6-14.7-14.7 0.1-8 6.4-14.4 14.4-14.6 8.1-0.2 15 6.2 15 14.6zm-5.6-0.2c0-5.1-4.1-9.1-9.1-9.1-4.8-0.1-9.1 3.9-9.1 9.1 0 5.1 4.2 9.3 9.5 9.1 4.7-0.2 8.7-4.1 8.7-9.1z"
+                      />
+                      <path
+                        class="si"
+                        d="m54.7 38.6c3.2-3 7.1-4.5 11.5-4.9-5.2-2.3-10.7-3.3-16.4-3.4-6.4-0.1-12.7 0.8-18.6 3.3 4.5 0.3 8.4 1.8 11.7 4.8 3.3 3 5.2 6.8 5.9 11.2 0.8-4.3 2.7-8 5.9-11z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link"
+                ><svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 98 98"
+                  width="100%"
+                  height="100%"
+                >
+                  <title>twitter-svg</title>
+                  <style>
+                    .si {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      class="si"
+                      d="m97.8 48.9c0 27-21.9 48.9-48.9 48.9-27 0-48.9-21.9-48.9-48.9 0-27 21.9-48.9 48.9-48.9 27 0 48.9 21.9 48.9 48.9zm-12.1-21c0.1-0.1 0.1-0.3 0-0.4-0.1-0.1-0.3-0.2-0.4-0.1-2.1 1-4.4 1.7-6.8 2.1 2.5-1.9 4.3-4.5 5.3-7.5 0.1-0.1 0-0.3-0.1-0.4-0.1-0.1-0.3-0.1-0.4 0-2.8 1.7-5.9 2.8-9.1 3.5-2.8-2.9-6.8-4.6-10.9-4.6-8.4 0-15.2 6.8-15.2 15.2q0 1.5 0.3 3c-11.6-0.7-22.4-6.3-29.8-15.3-0.1-0.1-0.2-0.1-0.3-0.1-0.1 0-0.2 0.1-0.3 0.2-1.4 2.3-2.1 4.9-2.1 7.6 0 4.7 2.1 9 5.7 11.9-1.9-0.2-3.7-0.8-5.3-1.7-0.2-0.1-0.3-0.1-0.4 0-0.1 0.1-0.2 0.2-0.2 0.3v0.2c0 6.7 4.4 12.6 10.7 14.5-1.6 0.2-3.3 0.2-5-0.1-0.1 0-0.2 0-0.3 0.1-0.1 0.1-0.1 0.3-0.1 0.4 1.9 5.9 7.1 10 13.2 10.5-5.1 3.7-11.1 5.7-17.4 5.7-1.2 0-2.4-0.1-3.5-0.2-0.2-0.1-0.3 0-0.4 0.2-0.1 0.1 0 0.3 0.1 0.4 6.9 4.4 14.8 6.7 22.9 6.7 26.6 0 42.5-21.6 42.5-42.5 0-0.5 0-1.1 0-1.7 2.9-2.1 5.4-4.6 7.3-7.9z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 98 98"
+                  width="100%"
+                  height="100%"
+                >
+                  <title>facebook-svg</title>
+                  <style>
+                    .si {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      class="si"
+                      d="m97.8 48.9c0 27-21.9 48.9-48.9 48.9-27 0-48.9-21.9-48.9-48.9 0-27 21.9-48.9 48.9-48.9 27 0 48.9 21.9 48.9 48.9zm-30.2-35.9h-9.9c-9.7 0-16.4 6-16.4 16.9v9.4h-11v12.7h11v32.8h13.1v-32.8h12.6v-12.8h-12.6v-8.1c0-3.7 1-6.2 6.3-6.2h6.8z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link"
+                ><svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 98 98"
+                  width="100%"
+                  height="100%"
+                >
+                  <title>social-svg</title>
+                  <style>
+                    .si {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      class="si"
+                      d="m97.8 48.9c0 27-21.9 48.9-48.9 48.9-27 0-48.9-21.9-48.9-48.9 0-27 21.9-48.9 48.9-48.9 27 0 48.9 21.9 48.9 48.9zm-24.5-0.3c1.8-2.6 3.8-5 5.6-7.5 1.7-2.3 3.4-4.7 4.3-7.5 0.5-1.8 0-2.6-1.8-2.9-0.4-0.1-0.7-0.1-1-0.1h-10.9c-1.4 0-2.1 0.6-2.6 1.8-0.7 1.6-1.3 3.2-2.1 4.8-1.8 3.5-3.7 6.9-6.4 9.8-0.6 0.6-1.3 1.4-2.3 1.1-1.3-0.4-1.6-2.5-1.6-3.2v-12.6c-0.2-1.8-0.6-2.5-2.4-2.9h-11.3c-1.5 0-2.3 0.6-3.1 1.5-0.4 0.6-0.6 0.9 0.4 1.1 1.9 0.4 2.9 1.6 3.2 3.6 0.5 3 0.5 6 0.2 9-0.1 0.9-0.3 1.8-0.6 2.6-0.6 1.3-1.4 1.6-2.6 0.8-1-0.8-1.8-1.8-2.5-2.8-2.7-3.8-4.8-8-6.6-12.3-0.5-1.2-1.4-2-2.7-2-3.3-0.1-6.5-0.1-9.8 0-2 0.1-2.6 1-1.8 2.8 3.6 7.9 7.5 15.6 12.7 22.6 2.6 3.6 5.7 6.7 9.6 9 4.4 2.6 9.2 3.3 14.3 3.1 2.4-0.1 3.1-0.7 3.2-3.1 0.1-1.6 0.3-3.2 1.1-4.7 0.7-1.4 1.9-1.7 3.3-0.8 0.7 0.4 1.3 1 1.8 1.6 1.3 1.5 2.6 3 4 4.4 1.8 1.8 3.8 2.8 6.4 2.6h10c1.6-0.1 2.4-2.1 1.5-3.9-0.6-1.3-1.5-2.4-2.4-3.5-2-2.5-4.4-4.6-6.7-6.8-2.1-2-2.2-3.2-0.4-5.6z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link"
+                ><svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 98 98"
+                  width="100%"
+                  height="100%"
+                >
+                  <title>google-plus-social-logotype-svg</title>
+                  <style>
+                    .si {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <g>
+                      <path
+                        class="si"
+                        d="m50.7 33.7c0-6.8-4-17.3-11.8-17.3-2.4 0-5.1 1.2-6.6 3.1-1.6 2-2.1 4.5-2.1 7 0 6.3 3.7 16.7 11.7 16.7 2.3 0 4.9-1.1 6.4-2.6 2.2-2.2 2.4-5.2 2.4-6.9z"
+                      />
+                      <path
+                        class="si"
+                        d="m45.7 58.4c-0.7-0.1-1.2-0.1-2.2-0.1-0.8 0-5.9 0.2-9.9 1.5-2.1 0.7-8.1 3-8.1 9.7 0.1 6.7 6.5 11.5 16.6 11.5 9 0 13.8-4.3 13.8-10.2 0-4.8-3.1-7.3-10.2-12.4z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        class="si"
+                        d="m97.8 48.9c0 27-21.9 48.9-48.9 48.9-27 0-48.9-21.9-48.9-48.9 0-27 21.9-48.9 48.9-48.9 27 0 48.9 21.9 48.9 48.9zm-35.6 18.2c0-6.5-3.8-9.7-7.9-13.2l-3.4-2.6c-1-0.8-2.4-1.9-2.4-4 0-2.1 1.4-3.4 2.6-4.6 4-3.1 7.9-6.4 7.9-13.4 0-7.2-4.5-10.9-6.7-12.7h5.8l6.1-3.8h-18.5c-5 0-12.3 1.2-17.7 5.6-4 3.5-6 8.3-6 12.6 0 7.4 5.6 14.8 15.5 14.7 0.9 0 2-0.1 3-0.2-0.4 1.2-0.9 2.1-0.9 3.7 0 2.9 1.5 4.7 2.8 6.4-4.2 0.3-12.1 0.7-17.9 4.3-5.5 3.3-7.2 8.1-7.2 11.5 0 7 6.6 13.5 20.2 13.5 16.1 0 24.7-8.9 24.7-17.8zm25.2-19.4v-4.7h-9.4v-9.4h-4.6v9.4h-9.4v4.7h9.4v9.5h4.6v-9.5z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
